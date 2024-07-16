@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Patient Registration</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact:</label>
+                <input type="text" class="form-control" id="contact" name="contact">
+            </div>
+            <div class="form-group">
+                <label for="medicalHistory">Medical History:</label>
+                <textarea class="form-control" id="medicalHistory" name="medicalHistory"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="registerPatient()">Register</button>
+        </form>
+
+        <h2>Patients List</h2>
+        <ul id="patientsList">
+            <!-- Patient list will be rendered here -->
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
